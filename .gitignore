@@ -1,0 +1,7 @@
+dist
+node_modules
+
+debug.log
+yarn-error.log
+
+.jest-test-results.json

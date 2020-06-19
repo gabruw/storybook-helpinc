@@ -1,0 +1,51 @@
+<!-- #region Imports -->
+
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Separator from "../src/components/Separator/index.tsx";
+
+<!-- #endregion -->
+
+<Meta title="Components/Separator" id="separator" component={Separator} />
+
+## Resumo
+
+Um componente utilizado para separar componentes visuais através de uma linha simples.
+
+## Básico
+
+<Preview mdxSource={`<Separator />`}>
+    <Story
+        name="Básico"
+        argTypes={{
+            backgroundColor: { control: { type: "color" } },
+        }}
+    >
+        {(args) => <Separator />}
+    </Story>
+</Preview>
+
+## Alterações Simples
+
+<Preview
+    mdxSource={`<Separator width={'80'} height={'4px'} margin={'190px'} backgroundColor={'#F4F'}/>`}
+>
+    <Story
+        name="Alterações Simples"
+        args={{
+            width: "80%",
+            height: "4px",
+            margin: "190px",
+            backgroundColor: "#F4F",
+        }}
+        argTypes={{
+            backgroundColor: { control: { type: "color" } },
+        }}
+    >
+        {(args) => <Separator {...args} />}
+    </Story>
+</Preview>
+
+## Props
+
+<Props of={Separator} />

@@ -1,0 +1,36 @@
+<!-- #region Imports -->
+
+import { action } from "@storybook/addon-actions";
+import {
+    Description,
+    ColorPalette,
+    ColorItem,
+    Meta,
+} from "@storybook/addon-docs/blocks";
+
+import COLOR from "../src/library/color";
+
+<!-- #endregion -->
+
+<Meta title="Assets/Color" id="color" />
+
+## Cores
+
+<ColorPalette>
+    <ColorItem title="COLOR.WHITE" subtitle="Branco" colors={[COLOR.WHITE]} />
+    <ColorItem
+        title="COLOR.PRIMARY"
+        subtitle="Cinza Chumbo"
+        colors={[COLOR.PRIMARY]}
+    />
+    <ColorItem
+        title="COLOR.SECONDARY"
+        subtitle="Azul Piscina"
+        colors={[COLOR.SECONDARY]}
+    />
+    <ColorItem
+        title="COLOR.LIGHT_GRAY"
+        subtitle="Cinza Claro"
+        colors={[COLOR.LIGHT_GRAY]}
+    />
+</ColorPalette>

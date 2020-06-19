@@ -1,0 +1,65 @@
+<!-- #region Imports -->
+
+import { action } from "@storybook/addon-actions";
+import {
+    Meta,
+    Story,
+    Preview,
+    Props,
+    Source,
+    SourceState,
+} from "@storybook/addon-docs/blocks";
+
+import StyledButton from "../src/components/StyledButton";
+
+<!-- #endregion -->
+
+<Meta
+    title="Components/StyledButton"
+    id="styled-button"
+    component={StyledButton}
+/>
+
+## Resumo
+
+Um componente de botão simples.
+
+## Básico
+
+<Preview mdxSource={`<StyledButton text={"Lorem Ipsum"} />`}>
+    <Story
+        name="Basico"
+        args={{ text: "Lorem Ipsum" }}
+        argTypes={{
+            color: { control: { type: "color" } },
+            backgroundColor: { control: { type: "color" } },
+        }}
+    >
+        {(args) => <StyledButton {...args} />}
+    </Story>
+</Preview>
+
+## Alterações Simples
+
+<Preview
+    mdxSource={`<StyledButton text={"Custom"} color={"#676778"} backgroundColor={"#F2F555"}/>`}
+>
+    <Story
+        name="Alterações Simples"
+        args={{
+            text: "Custom",
+            color: "#676778",
+            backgroundColor: "#F2F555",
+        }}
+        argTypes={{
+            color: { control: { type: "color" } },
+            backgroundColor: { control: { type: "color" } },
+        }}
+    >
+        {(args) => <StyledButton {...args} />}
+    </Story>
+</Preview>
+
+## Props
+
+<Props of={StyledButton} />

@@ -1,0 +1,33 @@
+<!-- #region Imports -->
+
+import { action } from "@storybook/addon-actions";
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import Field from "../src/components/Field/index.tsx";
+
+<!-- #endregion -->
+
+<Meta title="Components/Field" id="field" component={Field} />
+
+## Resumo
+
+Um componente de entarda de dados.
+
+## Básico
+
+<Preview mdxSource={`<Field label="Lorem Ipsum" labelColor="#000000" />`}>
+    <Story
+        name="Básico"
+        args={{ label: "Lorem Ipsum", labelColor: "#000000" }}
+        argTypes={{
+            labelColor: { control: { type: "color" } },
+            borderColor: { control: { type: "color" } },
+        }}
+    >
+        {(args) => <Field />}
+    </Story>
+</Preview>
+
+## Props
+
+<Props of={Field} />

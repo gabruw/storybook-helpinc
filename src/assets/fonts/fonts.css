@@ -1,0 +1,14 @@
+@font-face {
+    font-family: HelveticaNeueLTPro55Lite;
+    src: url(./archives/HelveticaNeueLTPro55-LT.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeueLTPro55Bold;
+    src: url(./archives/HelveticaNeueLTPro55-BD.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeueLTPro65Medium;
+    src: url(./archives/HelveticaNeueLTPro65-MD.otf);
+}

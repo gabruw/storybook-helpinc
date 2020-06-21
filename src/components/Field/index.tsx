@@ -4,6 +4,7 @@ import React, { FC, Fragment } from "react";
 import InputLabel from "@material-ui/core/InputLabel";
 
 import StyledInput from "./StyledInput";
+import StyledSelect from "./StyledSelect";
 
 import COLOR from "../../library/color";
 import useStyles from "./styles";
@@ -36,6 +37,10 @@ type Props = {
      */
     label?: string;
     /**
+     * Array de opções a serem exibidas no campo
+     */
+    items?: [];
+    /**
      * Condição para tornar o campo desabilitado
      */
     disabled?: boolean;
@@ -58,8 +63,9 @@ export const Field: FC<Props> = ({
     onClick,
     onChange,
     name = "",
-    type = "text",
     label = "",
+    items = [],
+    type = "text",
     disabled = false,
     variant = "outlined",
     labelColor = COLOR.WHITE,
@@ -74,7 +80,16 @@ export const Field: FC<Props> = ({
             </InputLabel>
 
             {type === "select" ? (
-                <Fragment></Fragment>
+                <StyledSelect
+                    label={label}
+                    items={items}
+                    styles={styles}
+                    onBlur={onBlur}
+                    onClick={onClick}
+                    variant={variant}
+                    onChange={onChange}
+                    disabled={disabled}
+                />
             ) : (
                 <StyledInput
                     name={name}

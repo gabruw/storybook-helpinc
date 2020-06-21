@@ -28,6 +28,43 @@ Um componente de entarda de dados.
     </Story>
 </Preview>
 
+## Select
+
+<Preview
+    mdxSource={`<Field
+    type="select"
+    items: [
+        { title: "Teste 1" },
+        { title: "Teste 2" },
+        { title: "Teste 3" },
+        { title: "Teste 4" },
+    ],
+    label="Lorem Ipsum"
+    labelColor="#488991"
+    />`}
+>
+    <Story
+        name="Select"
+        args={{
+            type: "select",
+            items: [
+                { title: "Teste 1" },
+                { title: "Teste 2" },
+                { title: "Teste 3" },
+                { title: "Teste 4" },
+            ],
+            label: "Lorem Ipsum",
+            labelColor: "#488991",
+        }}
+        argTypes={{
+            labelColor: { control: { type: "color" } },
+            borderColor: { control: { type: "color" } },
+        }}
+    >
+        {(args) => <Field {...args} />}
+    </Story>
+</Preview>
+
 ## Props
 
 <Props of={Field} />

@@ -31,5 +31,7 @@ export const StyledButton: FC<Props> = ({
 
     return <Button className={styles.button}>{text}</Button>;
 };
-
+/**
+ *Ajustes para disciplina de GCM
+**/
 export default StyledButton;

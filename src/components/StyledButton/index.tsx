@@ -33,5 +33,7 @@ export const StyledButton: FC<Props> = ({
 };
 /**
  *Ajustes para disciplina de GCM
+ *Criar componente StyledButton
+ *Criar esquema de cores primários para o componente StyledButton
 **/
 export default StyledButton;

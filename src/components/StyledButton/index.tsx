@@ -32,8 +32,10 @@ export const StyledButton: FC<Props> = ({
     return <Button className={styles.button}>{text}</Button>;
 };
 /**
- * Ajustes para disciplina de GCM
- * Criar componente StyledButton
+ *Ajustes para disciplina de GCM
+ *Criar componente StyledButton
+ *Criar esquema de cores primários para o componente StyledButton
+ *Criar propriedade de onClick
  * Criar esquema de cores primários para o componente StyledButton
  * Criar propriedades do componente Field
 **/

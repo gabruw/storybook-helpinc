@@ -18,4 +18,8 @@ const Anchor = ({ getElement = null, className = null, id = null }) => {
     );
 };
 
+/* Alteração GCM
+Criação de referência no componente
+*/
+
 export default Anchor;

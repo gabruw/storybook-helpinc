@@ -18,4 +18,9 @@ const Delayed = ({ children, time = 500 }) => {
     return isShown ? children : null;
 };
 
+
+/* MOD GCM
+-Adicionar propriedades modulares
+/*
+
 export default Delayed;

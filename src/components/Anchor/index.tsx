@@ -24,7 +24,7 @@ const Anchor: FC<Props> = ({
     className = "",
     getElement = null,
 }: Props) => {
-    const [element, setElement] = useState(null);
+    const [element, setElement] = useState<HTMLDivElement | null>();
 
     if (getElement) {
         getElement.current = element;

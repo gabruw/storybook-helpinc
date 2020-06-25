@@ -1,10 +1,21 @@
 //#region Imports
 
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from "react";
 
 //#endregion
 
-const Delayed = ({ children, time = 500 }) => {
+type Props = {
+    /**
+     * O tempo de atraso na renderização
+     */
+    time?: number;
+    /**
+     * O componente a sofrer o atraso
+     */
+    children: any;
+};
+
+const Delayed: FC<Props> = ({ children, time = 500 }: Props) => {
     const [isShown, setIsShown] = useState(false);
 
     useEffect(() => {
@@ -17,10 +28,5 @@ const Delayed = ({ children, time = 500 }) => {
 
     return isShown ? children : null;
 };
-
-
-/* MOD GCM
--Adicionar propriedades modulares
-/*
 
 export default Delayed;

@@ -10,7 +10,6 @@ export default create({
     base: "light",
     colorPrimary: "#343434",
     colorSecondary: "#488991",
-    inputTextColor: "#FFFFFF",
 
     // UI
     appBg: "#eff2f5",
